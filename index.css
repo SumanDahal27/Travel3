@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Volkhov&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(Decore.png);
+    background-repeat: no-repeat;
+    background-position: 145% -10%;
+}
+.nav{
+    list-style: none;
+    display: inline-block;
+}
+.nav li a{
+    text-decoration: none;
+    font-style: normal;
+    font-size: 20px;
+    line-height: normal;
+    color:rgb(255, 0, 255);
+    margin-top: 20px;
+    transition: all 200ms ease-in-out;
+}
+header .align{
+    align-items: center;
+}
+.nav li{
+    margin: 20px 30px;
+}
+.special{
+    border: 1px solid rgba(37, 36, 36, 0.477);
+    margin-left: 5px;
+    border-radius: 10px;
+    padding: 5px; 
+    margin-top: 25px;
+    transition: all 300ms ease-in-out;
+}
+.special:hover{
+    font-weight: bolder;
+    transform: scale(1.1);
+}
+.nav li a:hover{
+    font-weight:bolder ;
+}
+.dropdown-btn{
+    color:rgb(255, 0, 255);
+    background-color: #FFF1DA;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.content{
+    display: none;
+    position: absolute;
+    background-color: #FFF1DA;
+    min-width: 160px;
+    z-index: 1;
+    transition: all 300ms ease-in;
+    border-radius: 10px;
+}
+.content a{
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+}
+.active{
+    display: block;
+}
+
+.dropdown-btn i{
+    margin-left: 10px;
+}
+.deep{
+    padding: 30px 0px;
+}
+.deep .pop{
+    margin-top: 100px;
+    color: #DF6951;
+    font-family: Poppins;
+    font-size: 26.602px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.deep .big{
+    color: #181E4B;
+    font-family: Volkhov;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 118.381px; 
+    letter-spacing: -4.469px;
+    margin-top: 30px;
+}
+.deep .big span{
+    position: relative;
+}
+.deep .big span::after{
+    content: " ";
+    width: 200px;
+    height: 10px;
+    background-color: #DF6951;
+    padding: -5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.deep p{
+    color: #5E6282;
+    font-family: Poppins;
+    font-size: 21.282px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 39.904px;
+    margin-top: 20px;
+}
+.relt img{
+    margin-right: 40px;
+}
+.relt{
+    position: relative;
+}
+.relt .top{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.relt .bottom{
+    position: absolute;
+    right: -70px;
+    bottom: 100px;
+}
+.flix{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.flix a{
+    text-decoration: none;
+    color: white;
+    background-color: #F1A501;
+    padding: 20px 30px;
+    border-radius: 10px;
+    transition: all 200ms ease-in;
+}
+.flix .round{
+    background-color: #DF6951;
+    padding: 10px 15px;
+    border-radius:50%;
+    margin-left: 40px;
+    box-shadow: 2px 5px 6px  1.8px rgba(0, 0, 0, 0.6);
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+.flix span{
+    color: #686D77;
+    font-family: Poppins;
+    font-size: 22.612px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 20px;
+}
+.flix .round:hover{
+    background-color: #8b2f1d;
+}
+.flix a:hover{
+    background-color: #956705d9;
+}
+.category{
+    color: #5E6282;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 23.942px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 40px;
+}
+.service{
+    color: #14183E;
+    text-align: center;
+    font-family: Volkhov;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.flux{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 60px;
+}
+.flux h5{
+    color: #1E1D4C;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 20px;
+}
+.flux p{
+    color:  #5E6282;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34.583px;
+}
+.flux.spec img{
+    margin-top: -50px;
+}
+.flux.spec h5{
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+.flux.spec div{
+    padding: 30px;
+    border-radius: 47.884px;
+    box-shadow: 0px 2.46319px 4.18742px 0px rgba(0, 0, 0, 0.00), 0px 10.83803px 8.67042px 0px rgba(0, 0, 0, 0.01), 0px 26.60243px 17.29158px 0px rgba(0, 0, 0, 0.01), 0px 51.23432px 33.89346px 0px rgba(0, 0, 0, 0.01), 0px 86.21157px 62.31867px 0px rgba(0, 0, 0, 0.02), 0px 133.01216px 106.40972px 0px rgba(0, 0, 0, 0.02);
+}
+.only{
+    background-image: url(Group\ 4.png);
+    background-repeat: no-repeat;
+    background-position: 95% 0;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+body::-webkit-scrollbar {
+    width: 1em;
+} 
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color:#FFF1DA;
+    outline: 1px solid #5E6282;
+}
+.rel{
+    position: relative;
+    transition: all 600ms ease-in-out;
+}
+.rel img{
+    width: 400px;
+    height: 500px;
+}
+.rel div .same{
+    color: #5E6282;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+.rel div span{
+    margin-left: 50px;
+}
+.rel div i{
+    margin-right: 30px;
+    margin-left: 10px;
+}
+.pd{
+    padding: 30px 0px;
+}
+.rel div{
+    position: absolute;
+    background-color: white;
+    width: 400px;
+    padding: 10px 10px;
+    height: 100px;
+    top: 60%;
+    left: 78px;
+    border-radius: 0px 0px 31.923px 31.923px;
+}
+.rel div .same.bot{
+    font-size: 17px;
+}
+.service.rek{
+    text-align: left;
+}
+.rel:hover{
+    transform: scale(1.1);
+}
+.tom{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.little{
+    color: #5E6282;
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+}
+.text{
+    text-align: left;
+    color:  #5E6282;
+    font-family: Poppins;
+    font-size: 17px    ;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+.tom div:last-child{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.man{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Ellipse\ 8.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: 110px -50px;
+}
+.ellipse{
+    padding: 20px;
+    border-radius: 34.583px;
+    background: #FFF;
+    box-shadow: 0px 2.46319px 4.18742px 0px rgba(0, 0, 0, 0.00), 0px 10.83803px 8.67042px 0px rgba(0, 0, 0, 0.01), 0px 26.60243px 17.29158px 0px rgba(0, 0, 0, 0.01), 0px 51.23432px 33.89346px 0px rgba(0, 0, 0, 0.01), 0px 86.21157px 62.31867px 0px rgba(0, 0, 0, 0.02), 0px 133.01216px 106.40972px 0px rgba(0, 0, 0, 0.02);
+}
+.man .ellipse .bott{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.bott span{
+    margin-left: 20px;
+}
+.man .ellipse .bott i{
+    margin-left: 200px;
+    cursor: pointer;
+}
+.out{
+    color: #080809;
+    font-family: Poppins;
+    font-size: 20px;
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height:28px;
+    letter-spacing: 0.359px;
+}
+.light , .bott span{
+    color: #84829A;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: -0.106px;
+}
+.outside{
+    position: absolute;
+    padding: 20px;
+    right: 10px;
+    bottom: 150px;
+    width: 300px;
+    height: 129px;
+    display: flex;
+    border-radius: 23.942px;    
+    background: #FFF;
+    box-shadow: 0px 2.46319px 4.18742px 0px rgba(0, 0, 0, 0.00), 0px 10.83803px 8.67042px 0px rgba(0, 0, 0, 0.01), 0px 26.60243px 17.29158px 0px rgba(0, 0, 0, 0.01), 0px 51.23432px 33.89346px 0px rgba(0, 0, 0, 0.01), 0px 86.21157px 62.31867px 0px rgba(0, 0, 0, 0.02), 0px 133.01216px 106.40972px 0px rgba(0, 0, 0, 0.02);
+}
+.outside div img{
+    margin-bottom: 100px;
+}
+.outside div .meh{
+    color: #84829A;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.652px;
+}
+.outside img{
+    margin: 0px 20px;
+}
+.outside div P{
+    color:#8A79DF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px ;
+    letter-spacing: -1.024px;
+    margin-top: 10px;
+}
+.outside div .black{
+    color:  #080809;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    margin-left: 5px;
+    letter-spacing: -1.024px;
+}
+.rek{
+    text-align: left;
+}
+.aurther{
+    margin-top: 200px;
+}
+.jes{
+    border-radius: 13.301px;
+background: var(--white, #FFF);
+box-shadow: 0px 2.46319px 4.18742px 0px rgba(0, 0, 0, 0.00), 0px 10.83803px 8.67042px 0px rgba(0, 0, 0, 0.01), 0px 26.60243px 17.29158px 0px rgba(0, 0, 0, 0.01), 0px 51.23432px 33.89346px 0px rgba(0, 0, 0, 0.01), 0px 86.21157px 62.31867px 0px rgba(0, 0, 0, 0.02), 0px 133.01216px 106.40972px 0px rgba(0, 0, 0, 0.02);
+}
+.jes div .detail{
+    color:  #5E6282;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 200% */
+}
+.jes strong{
+    color:  #5E6282;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.jes span{
+    color: #5E6282;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.jes{
+    margin-top: 120px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+.jes .face{
+    position: absolute;
+    left: -30px;
+    top: -40px;
+}
+.jes .all{
+    margin-left: 70px;
+}
+.btn{
+    border-radius: 50%;
+    padding: 20px;
+    background-color: #1E1D4C;
+}
+.buttons{
+    margin-top: 50px;
+}
+.wtf{
+    padding-top: 60px;
+}
+.wtf img{
+    margin: 0px 30px;
+}
+.pink{
+    border-radius: 26.602px 171.586px 26.602px 26.602px;
+    opacity: 0.2;
+    background:#DFD7F9;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.pink h5{
+    color: #5E6282;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 66px
+}
+.pink div input{
+    border-radius: 13.301px;
+    background:#FFF;
+    padding: 10px;
+    width: 300px;
+}
+.pink div{
+    margin-top: 30px;
+}
+.pink div button{
+    color: white;
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 13.301px;
+    background:  linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+}
+.pink img{
+    position: absolute;
+    top: -30px;
+    left: -20px;
+}
+footer{
+    padding-top: 160px;
+}
+footer .aiz{
+    color: #5E6282;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+ul{
+    list-style: none;
+}
+footer h5{
+    color:  #080809;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    margin-top: 70px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: #5E6282;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+}
+.ok img{
+    width: 40px;
+    height: 40px;
+    margin-top: 70px;
+    cursor: pointer;
+}
+.adhd{
+    color:  #5E6282;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.133px;
+}
+footer img{
+    cursor: pointer;
+}
+.copy{
+    color: #5E6282;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 90px;
+}
+@media (max-width: 600px){
+    body{
+        background-image: none;
+    }
+    #display{
+        background-color: white;
+    }
+    .nav li{
+        width: 100%;
+        display: block;
+    }
+    .content{
+        background-color: #ddd;
+        opacity: 0.3;
+    }
+    .nav .special{
+        width: 100px;
+    }
+    .nav a{
+        font-size: 12px;
+    }
+    .deep .pop{
+        font-size: 18px;
+        text-align: center;
+    }
+    .relt img, header img{
+        width: 100%;
+        height: auto;
+    }
+    .deep .big{
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+    .deep .big span::after{
+        width: 30px;
+        height: 5px; 
+    }
+    .deep p{
+        font-size: 17px;
+    }
+    .category{
+        font-size: 20px;
+    }
+    .service{
+        font-size: 30px;
+    }
+    p{
+        font-size: small;
+    }
+    .tom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tom .text{
+        text-align: center;
+    }
+    .little{
+        text-align: center;
+    }
+    .tom div:last-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rek{
+        text-align: center;
+    }
+    .service.rek{
+        text-align: center;
+    }
+    .wtf{
+        display: none;
+    }
+    section{
+        padding-top: 40px;
+    }
+    .pink img{
+        width: 50px;
+        height: 50px;
+    }
+    .pink h5{
+        font-size: 25px;
+        text-align: center;
+        padding-right: 20px;
+    }
+    .pink div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .pink div button{
+        margin-top: 40px;
+    }
+}
